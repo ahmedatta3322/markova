@@ -1,8 +1,8 @@
-import React, { useState, initialState, state } from "react";
-import { useSpring, animated } from "react-spring";
+import React, { useState, initialState } from "react";
+
 import "./home.css";
 import "antd/dist/antd.css";
-import { Layout, Menu, Button, Anchor } from "antd";
+import { Layout, Menu, Button } from "antd";
 import logo from "../../images/logo.png";
 import facebook from "../../images/fb.png";
 import twitter from "../../images/twitter.png";
@@ -13,7 +13,7 @@ import Branding from "../parts/Branding";
 import Media from "../parts/Media";
 import Website from "../parts/Website";
 const { Header, Footer, Content } = Layout;
-const { Link } = Anchor;
+
 //const initialState = <Digital></Digital>;
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
       <Header id="navheader">
         {" "}
         <a href="/">
-          <img src={logo} id="logoimage"></img>
+          <img alt="" src={logo} id="logoimage"></img>
         </a>
         <Menu id="navbar" mode="horizontal" defaultSelectedKeys={["2"]}>
           <Menu.Item key="1">Home</Menu.Item>
@@ -53,13 +53,13 @@ export default function Home() {
         </Menu>
         <Menu id="socials" mode="horizontal">
           <Menu.Item key="1">
-            <img src={facebook}></img>
+            <img alt="" src={facebook}></img>
           </Menu.Item>
           <Menu.Item key="2">
-            <img src={twitter}></img>
+            <img alt="" src={twitter}></img>
           </Menu.Item>
           <Menu.Item key="3">
-            <img src={pin}></img>
+            <img alt="" src={pin}></img>
           </Menu.Item>
         </Menu>
       </Header>
@@ -71,7 +71,7 @@ export default function Home() {
           <h1 className="introtext" id="readytext">
             Are you ready ?
           </h1>
-          <img id="model" src={model}></img>
+          <img alt="" id="model" src={model}></img>
         </Content>
       )}
       {state === 1 && <Digital></Digital>}
