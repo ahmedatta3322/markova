@@ -1,0 +1,123 @@
+#home {
+  background-image: url("../../images/background.png");
+  height: 100%;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+#navbar {
+  background-color: transparent;
+  color: white;
+  border-bottom: none;
+  display: inline-block;
+  margin-left: 32%;
+}
+#navheader {
+  background-color: transparent;
+}
+
+#logoimage {
+  height: 150px;
+  display: inline-block;
+}
+.ant-layout-footer {
+  background: none !important;
+}
+.ant-layout-content {
+  color: white;
+}
+#socials {
+  background-color: transparent;
+  border-bottom: none;
+  display: inline-block;
+  margin-left: 15%;
+}
+#footer {
+  background-image: url("../../images/footer.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 50%;
+  z-index: 9;
+  opacity: 0.8;
+
+  border: none !important;
+}
+
+#model {
+  position: absolute;
+  height: 80%;
+  bottom: 0;
+  left: -40px;
+}
+.introtext {
+  color: white;
+  position: absolute;
+  left: 37vw;
+  top: 26vh;
+  font-size: 2.8vw;
+  font-family: Oxygen;
+}
+#readytext {
+  top: 41vh;
+  left: 38vw;
+  width: 26%;
+  padding-bottom: 3vh;
+  line-height: 70px;
+  height: 10%;
+  text-align: center;
+  background-image: url("../../images/textbg.png");
+  color: #ffc330;
+  background-repeat: no-repeat;
+}
+span {
+  color: #ff6060;
+}
+#navfooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12vh;
+  box-shadow: black 1;
+  background-color: transparent !important;
+}
+.footernavbtn {
+  height: 11.9vh !important;
+  background-color: #291a69 !important;
+  opacity: 0.5;
+  width: 100%;
+  border: none !important;
+  font-size: x-large !important;
+  color: #b1b1b1 !important;
+}
+#item1 {
+  position: absolute;
+  left: 0;
+  width: 23.9% !important;
+  margin: 0;
+}
+#item2 {
+  position: absolute;
+  left: 24vw;
+  width: 23.9% !important;
+}
+#item3 {
+  position: absolute;
+  width: 23.9% !important;
+  left: 49.3vw;
+}
+#item4 {
+  position: absolute;
+  right: 0;
+  width: 23.9% !important;
+  margin: 0;
+}

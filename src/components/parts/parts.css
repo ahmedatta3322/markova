@@ -1,0 +1,20 @@
+.partsimg {
+  position: absolute;
+  width: 15vw;
+  left: 43vw;
+  top: 19vh;
+}
+.partstext {
+  position: absolute;
+  font-size: xx-large;
+  left: 44.2vw;
+  top: 36vh;
+  color: #ffd366;
+}
+.whitepart {
+  position: absolute;
+
+  left: 35.2vw;
+  top: 45.3vh;
+  transform: rotate(0.8deg);
+}
