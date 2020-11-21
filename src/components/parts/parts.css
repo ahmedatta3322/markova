@@ -13,8 +13,21 @@
 }
 .whitepart {
   position: absolute;
-
   left: 35.2vw;
-  top: 45.3vh;
+  top: 45.7vh;
   transform: rotate(0.8deg);
+}
+.servicetitle {
+  color: #8558df;
+  position: absolute;
+  font-size: xx-large;
+  left: 45.2vw;
+  top: 51.8vh;
+  z-index: 10;
+}
+#serviceone {
+  left: 70.2vw;
+  top: 60.3vh;
+  font-size: x-large;
+  transform: rotate(19deg);
 }

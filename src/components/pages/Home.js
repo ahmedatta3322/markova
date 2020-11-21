@@ -1,26 +1,27 @@
-import React, { useState, initialState } from "react";
+import React, { useState, initialState, useContext } from "react";
 
 import "./home.css";
 import "antd/dist/antd.css";
 import { Layout, Menu, Button } from "antd";
-import logo from "../../images/logo.png";
-import facebook from "../../images/fb.png";
-import twitter from "../../images/twitter.png";
-import pin from "../../images/pin.png";
+
 import model from "../../images/model.png";
 import Digital from "../../components/parts/Digital";
 import Branding from "../parts/Branding";
 import Media from "../parts/Media";
 import Website from "../parts/Website";
+import Headernav from "../layouts/Headernav";
+import HeaderContext from "../context/HeaderContext";
 const { Header, Footer, Content } = Layout;
 
 //const initialState = <Digital></Digital>;
 
-export default function Home() {
+export default function Home(props) {
   const [state, setstate] = useState(initialState);
+  const page = useContext(HeaderContext);
+  console.log(page);
   const digitalclick = () => {
     setstate(1);
-    console.log("here", state);
+    console.log("here", state, page);
     //return <Digital></Digital>;
   };
   const brandingclick = () => {
@@ -34,35 +35,7 @@ export default function Home() {
   };
   return (
     <Layout id="home">
-      <Header id="navheader">
-        {" "}
-        <a href="/">
-          <img alt="" src={logo} id="logoimage"></img>
-        </a>
-        <Menu id="navbar" mode="horizontal" defaultSelectedKeys={["2"]}>
-          <Menu.Item key="1">Home</Menu.Item>
-          <Menu.Item key="2" disabled>
-            Services
-          </Menu.Item>
-          <Menu.Item key="3" disabled>
-            About
-          </Menu.Item>
-          <Menu.Item key="4" disabled>
-            Products
-          </Menu.Item>
-        </Menu>
-        <Menu id="socials" mode="horizontal">
-          <Menu.Item key="1">
-            <img alt="" src={facebook}></img>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <img alt="" src={twitter}></img>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <img alt="" src={pin}></img>
-          </Menu.Item>
-        </Menu>
-      </Header>
+      <Headernav parallax={props.parallax}></Headernav>
       {state === undefined && (
         <Content>
           <h1 className="introtext">
