@@ -6,17 +6,11 @@ import About from "./components/pages/About";
 import HeaderContext from "../src/components/context/HeaderContext";
 
 function App() {
-  let layer;
   const key = useContext(HeaderContext);
   console.log("i'm here", key);
   //layer.scrollTo(1)
   return (
-    <Parallax
-      pages={3}
-      scrolling={false}
-      horizontal
-      ref={(ref) => (layer = ref)}
-    >
+    <Parallax pages={3} scrolling={false} horizontal>
       <ParallaxLayer offset={0} speed={0.5}>
         <Home></Home>;
       </ParallaxLayer>

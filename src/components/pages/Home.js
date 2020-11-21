@@ -11,7 +11,7 @@ import Media from "../parts/Media";
 import Website from "../parts/Website";
 import Headernav from "../layouts/Headernav";
 import HeaderContext from "../context/HeaderContext";
-const { Header, Footer, Content } = Layout;
+const { Footer, Content } = Layout;
 
 //const initialState = <Digital></Digital>;
 
